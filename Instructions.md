@@ -1,0 +1,3 @@
+- Create a migration file
+- rails generate migration create_articles
+- rails db:migrate --> to run the migration file
