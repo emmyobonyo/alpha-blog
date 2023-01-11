@@ -31,6 +31,7 @@ class ArticlesController < ApplicationController
 
     def update
         # Find article that needs to be edited
+        # The function that does this is below
         
         #  update the article. We need to white list and make title, and descriptin available to use
         if @article.update(article_params)
@@ -43,6 +44,7 @@ class ArticlesController < ApplicationController
 
     def destroy
         # Find article to be deleted based on the id
+        # The function that does this is below
         
         @article.destroy
         redirect_to articles_path
