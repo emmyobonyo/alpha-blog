@@ -25,5 +25,4 @@ ActiveRecord::Schema[7.0].define(version: 2023_01_12_124326) do
     t.datetime "updated_at", null: false
     t.string "email"
   end
-
 end

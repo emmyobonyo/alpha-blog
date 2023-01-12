@@ -44,3 +44,6 @@ user_2.articles << article
 
 ### Error messages 
 - user.errors.full_messages
+
+### Assign an article to a user
+- user.articles << article

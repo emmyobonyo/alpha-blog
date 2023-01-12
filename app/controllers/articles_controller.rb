@@ -19,6 +19,7 @@ class ArticlesController < ApplicationController
 
     def create
         @article = Article.new(article_params)
+        @article.user = User.first
         if @article.save
         # redirect to articles show page
             flash[:notice] = "Alert was created successfully."
