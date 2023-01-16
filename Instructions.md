@@ -47,3 +47,4 @@ user_2.articles << article
 
 ### Assign an article to a user
 - user.articles << article
+- rails routes --expanded : get routes
