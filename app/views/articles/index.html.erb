@@ -1,5 +1,7 @@
 <h1 class="text-center mt-4">Listing All Articles</h1>
-
+<div class="flickr_pagination">
+    <%= will_paginate @articles, :container => false %>
+</div>
 <div class="container">
     <% @articles.each do |article| %>
         <div class="card text-center ">
@@ -23,6 +25,9 @@
 <p>
     <%= link_to 'Create new article', new_article_path %>
 </p>
+<div class="flickr_pagination">
+    <%= will_paginate @articles, :container => false %>
+</div>
 
 <% if false %>
 <table>
