@@ -6,4 +6,9 @@ module ApplicationHelper
         gravatar_url = "http://www.gravatar.com/avatar/#{hash}?s=#{size}"
         image_tag(gravatar_url, alt: user.username, class: "rounded")
     end
+
+    #Before transfering it to the application controller
+    #def current_user 
+     #   @current_user ||= User.find(session[:user_id]) if session[:user_id]
+    #end
 end

@@ -48,3 +48,6 @@ user_2.articles << article
 ### Assign an article to a user
 - user.articles << article
 - rails routes --expanded : get routes
+
+### App development process from the end.
+- Allow signed users to create articles that will be credited to them.

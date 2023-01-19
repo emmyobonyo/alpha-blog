@@ -19,7 +19,9 @@ class ArticlesController < ApplicationController
 
     def create
         @article = Article.new(article_params)
-        @article.user = User.first
+        # Code below Assign every article to the first user of the article
+        # @article.user = User.first
+        @article.user = current_user
         if @article.save
         # redirect to articles show page
             flash[:notice] = "Alert was created successfully."
