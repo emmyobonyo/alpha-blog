@@ -51,3 +51,4 @@ user_2.articles << article
 
 ### App development process from the end.
 - Allow signed users to create articles that will be credited to them.
+- Restrict actions from the UI
