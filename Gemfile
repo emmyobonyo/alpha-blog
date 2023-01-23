@@ -9,6 +9,8 @@ gem "rails", "~> 7.0.4"
 # The original asset pipeline for Rails [https://github.com/rails/sprockets-rails]
 gem "sprockets-rails"
 
+gem 'test_helper', '~> 0.0.1'
+
 # Use sqlite3 as the database for Active Record
 
 # We don't want to use SQLlite
