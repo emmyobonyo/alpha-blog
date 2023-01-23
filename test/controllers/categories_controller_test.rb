@@ -13,8 +13,17 @@ class CategoriesControllerTest < ActionDispatch::IntegrationTest
         assert_response :success
     end
 
+    test "should create category" do 
+        assert_difference("Category.count", 1) do
+          post categories_url, params: { category: { name: "Travel" } }
+        end
+
+        assert_redirected_to category_url(Category.last)
+    end
+
     test "Should show category" do
         get category_url(@category)
         assert_response :success
+        assert_match "Sports", response.body
     end
 end
