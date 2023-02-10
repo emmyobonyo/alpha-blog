@@ -1,4 +1,5 @@
 ## Start with creating a table
+- create a rails app with postgresql
 - rails generate migration create_categories
 
 - Create a migration file
